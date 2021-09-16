@@ -1,0 +1,1 @@
+cmd_/home/kalyan/Desktop/Day_2/IOCTL/Ioctl.ko := ld -r -m elf_x86_64  --build-id=sha1  -T scripts/module.lds -o /home/kalyan/Desktop/Day_2/IOCTL/Ioctl.ko /home/kalyan/Desktop/Day_2/IOCTL/Ioctl.o /home/kalyan/Desktop/Day_2/IOCTL/Ioctl.mod.o;  true
