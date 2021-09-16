@@ -1,0 +1,1 @@
+cmd_/home/kalyan/Desktop/Day_2/Dynamic_cdrive_user_kernel/Module.symvers := sed 's/ko$$/o/' /home/kalyan/Desktop/Day_2/Dynamic_cdrive_user_kernel/modules.order | scripts/mod/modpost -m -a   -o /home/kalyan/Desktop/Day_2/Dynamic_cdrive_user_kernel/Module.symvers -e -i Module.symvers   -T -

@@ -1,0 +1,1 @@
+cmd_/home/kalyan/Desktop/Day_2/Dynamic_cdrive_user_kernel/helloworld.ko := ld -r -m elf_x86_64  --build-id=sha1  -T scripts/module.lds -o /home/kalyan/Desktop/Day_2/Dynamic_cdrive_user_kernel/helloworld.ko /home/kalyan/Desktop/Day_2/Dynamic_cdrive_user_kernel/helloworld.o /home/kalyan/Desktop/Day_2/Dynamic_cdrive_user_kernel/helloworld.mod.o;  true
