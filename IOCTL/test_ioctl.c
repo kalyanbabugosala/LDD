@@ -4,17 +4,20 @@
 #include <string.h>
 #include <stdlib.h>
 #include <sys/types.h>
-#include<sys/ioctl.h>
+#include<sys/ioctl.h>//for IOCTL macros and definition of ioctl()
+#include<errno.h>
 
 #define MY_MAGIC 'a'
-#define WR_VALUE _IOW(MY_MAGIC,'a',int32_t*)
-#define RD_VALUE _IOR(MY_MAGIC,'b',int32_t*)
-#define MY_IOCTL_MAX_CMD 2
+#define WR_VALUE _IOW(MY_MAGIC,'a',int32_t*)//command
+#define RD_VALUE _IOR(MY_MAGIC,'b',int32_t*)//command
+//#define MY_IOCTL_MAX_CMD 2
 
 int main()
 {
 	int fd;
-    int32_t value, number;	
+        int32_t value, number;	
+	
+	//int res;
 	
 	printf("[%d] - Opening device my_cdrv\n", getpid() );
 	
@@ -29,8 +32,8 @@ int main()
 	printf("Enter the Value to send\n");
 	scanf("%d",&number);
 	printf("Writing Value to Driver\n");
-	ioctl(fd, WR_VALUE, (int32_t*) &number); 
-
+	ioctl(fd, WR_VALUE, (int32_t*) &number)//return 0 or non -ve value on success or else -1 will return and errno will set appropriately.
+	 
 	printf("Reading Value from Driver\n");
 	ioctl(fd, RD_VALUE, (int32_t*) &value);
 	printf("Value is %d\n", value);
