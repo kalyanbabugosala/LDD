@@ -18,12 +18,12 @@ MODULE_VERSION("1:0.3");
 #define MINORNO  0 
 #define CHAR_DEV_NAME "my_cdev"
 
-#define MAX_LENGTH 4000
+//#define MAX_LENGTH 4000
 #define SUCCESS 0
 
-struct cdev *my_cdev;
-dev_t mydev;
-int count=1,inuse=0;
+struct cdev *my_cdev;//for initializing fops
+dev_t mydev;//for major and minor
+int count=1;
 
 static int char_dev_open(struct inode *inode,
 			    struct file  *file)
@@ -63,7 +63,7 @@ static int __init hello_world_init(void) /* Constructor */
 
 	register_chrdev_region(mydev,count,CHAR_DEV_NAME); 
 
-	my_cdev= cdev_alloc();  // allow allocate cdev instance, 
+	my_cdev = cdev_alloc();  // allow allocate cdev instance, 
 	cdev_init(my_cdev,&char_dev_fops);  
 
 	ret=cdev_add(my_cdev,mydev,count);// register with VFS layer , count = how many minor no. in use .
