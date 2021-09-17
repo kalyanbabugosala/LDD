@@ -10,7 +10,7 @@
 
 
 #define CHAR_DEV_NAME "my_cdrv"
-#define MAX_LENGTH 4000
+//#define MAX_LENGTH 4000
 #define SUCCESS 0
 
 static char *char_device_buf;
