@@ -47,7 +47,7 @@ static struct file_operations fops =
     .read       = my_read,
     .write      = my_write,
     .open       = my_open,
-	.unlocked_ioctl = my_ioctl,
+    .unlocked_ioctl = my_ioctl,
     .release    = my_release,
 };
 
