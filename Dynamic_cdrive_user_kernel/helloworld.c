@@ -8,7 +8,7 @@
 #include <linux/kdev_t.h>
 
 #define CHAR_DEV_NAME "my_cdrv"
-#define MAX_LENGTH 4000
+//#define MAX_LENGTH 4000
 #define SUCCESS 0
 
 static char *char_device_buf;
@@ -151,7 +151,7 @@ static __init int char_dev_init(void)
 	}
 
 	my_class = class_create (THIS_MODULE, "VIRTUAL11111");
-    device_create (my_class, NULL, mydev, NULL, "%s", "my_Char_driver");
+        device_create (my_class, NULL, mydev, NULL, "%s", "my_Char_driver");
 
 	printk(KERN_INFO"\nDevice Registered: %s\n",CHAR_DEV_NAME);
 	printk(KERN_INFO "Major number = %d, Minor number = %d\n", MAJOR (mydev),MINOR (mydev));
