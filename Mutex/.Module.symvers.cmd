@@ -1,0 +1,1 @@
+cmd_/home/kalyan/Desktop/LDD/Saturday/Mutex/Module.symvers := sed 's/ko$$/o/' /home/kalyan/Desktop/LDD/Saturday/Mutex/modules.order | scripts/mod/modpost -m -a   -o /home/kalyan/Desktop/LDD/Saturday/Mutex/Module.symvers -e -i Module.symvers   -T -
