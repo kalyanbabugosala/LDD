@@ -5,7 +5,7 @@
 #include <linux/module.h>
 
 
-MODULE_AUTHOR("Phani");
+MODULE_AUTHOR("Kalyan");
 MODULE_LICENSE("GPL");
 
 int data = 0;
