@@ -121,10 +121,14 @@ static int __init my_simpledriver_init(void)
 	printk(KERN_INFO"My sample driver start");
 
 	
-	char_thread = kthread_run(my_thread_fun,NULL,"my char thread");
+	char_thread = kthread_run(my_thread_fun,NULL,"my char thread"); // 
 	if(char_thread)
 	{
-		printk(KERN_INFO" create the thread");
+		printk(KERN_INFO" create the thread status is %d",*char_thread);
+		printk(KERN_INFO"pid is:%d",char_thread->pid);
+		printk(KERN_INFO"status is:%d",char_thread->thread_info.status);
+		printk(KERN_INFO"tgid is:%d",char_thread->tgid);
+		printk(KERN_INFO"priority is:%d",char_thread->prio);
 	}
 	else 
 	{
@@ -158,4 +162,3 @@ static void __exit my_simpledriver_exit(void)
 }
 module_init(my_simpledriver_init);
 module_exit(my_simpledriver_exit);
-
