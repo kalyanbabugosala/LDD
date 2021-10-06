@@ -1,0 +1,1 @@
+cmd_/home/kalyan/Desktop/LDD/Saturday/Mutex/Mutex.ko := ld -r -m elf_x86_64  --build-id=sha1  -T scripts/module.lds -o /home/kalyan/Desktop/LDD/Saturday/Mutex/Mutex.ko /home/kalyan/Desktop/LDD/Saturday/Mutex/Mutex.o /home/kalyan/Desktop/LDD/Saturday/Mutex/Mutex.mod.o;  true

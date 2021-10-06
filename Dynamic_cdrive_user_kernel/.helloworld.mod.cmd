@@ -1,0 +1,1 @@
+cmd_/home/kalyan/Desktop/Day_2/Dynamic_cdrive_user_kernel/helloworld.mod := { echo  /home/kalyan/Desktop/Day_2/Dynamic_cdrive_user_kernel/helloworld.o;  echo; } > /home/kalyan/Desktop/Day_2/Dynamic_cdrive_user_kernel/helloworld.mod

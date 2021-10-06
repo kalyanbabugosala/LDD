@@ -1,0 +1,1 @@
+cmd_/home/kalyan/Desktop/LDD/Interrupts_BH/interrupt.ko := ld -r -m elf_x86_64  --build-id=sha1  -T scripts/module.lds -o /home/kalyan/Desktop/LDD/Interrupts_BH/interrupt.ko /home/kalyan/Desktop/LDD/Interrupts_BH/interrupt.o /home/kalyan/Desktop/LDD/Interrupts_BH/interrupt.mod.o;  true
