@@ -1,0 +1,1 @@
+cmd_/home/kalyan/Desktop/LDD/Github_2/Interrupts_BH/Tasklets/interrupt.ko := ld -r -m elf_x86_64  --build-id=sha1  -T scripts/module.lds -o /home/kalyan/Desktop/LDD/Github_2/Interrupts_BH/Tasklets/interrupt.ko /home/kalyan/Desktop/LDD/Github_2/Interrupts_BH/Tasklets/interrupt.o /home/kalyan/Desktop/LDD/Github_2/Interrupts_BH/Tasklets/interrupt.mod.o;  true

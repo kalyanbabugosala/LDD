@@ -1,0 +1,1 @@
+cmd_/home/kalyan/Desktop/LDD/Github_2/Interrupts_BH/Tasklets/interrupt.mod := { echo  /home/kalyan/Desktop/LDD/Github_2/Interrupts_BH/Tasklets/interrupt.o;  echo; } > /home/kalyan/Desktop/LDD/Github_2/Interrupts_BH/Tasklets/interrupt.mod

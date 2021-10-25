@@ -1,0 +1,1 @@
+cmd_/home/kalyan/Desktop/LDD/Github_2/Interrupts_BH/Work_queues/Module.symvers := sed 's/ko$$/o/' /home/kalyan/Desktop/LDD/Github_2/Interrupts_BH/Work_queues/modules.order | scripts/mod/modpost -m -a   -o /home/kalyan/Desktop/LDD/Github_2/Interrupts_BH/Work_queues/Module.symvers -e -i Module.symvers   -T -
